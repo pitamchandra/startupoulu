@@ -1,0 +1,36 @@
+.menu {
+    .container-fluid {
+      .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        .logo {
+          a {
+            img {
+              width: 150px;
+              display: block;
+            }
+          }
+        }
+  
+        .nav_item {
+          nav {
+            display: flex;
+            gap: 20px; // Adds space between navigation items
+  
+            .nav-item {
+              text-decoration: none;
+              color: $brand-color;
+              font-size: 16px;
+              transition: color 0.3s ease;
+  
+              &:hover {
+                color: #007BFF; // Changes color on hover
+              }
+            }
+          }
+        }
+      }
+    }
+  }
