@@ -4,11 +4,18 @@
   }
   
   .justify-center{
-    display: flex; 
+    justify-content: center; 
   }
   
-  .direction_collum{
+  .flex-col{
     flex-direction: column;
+  }
+
+  .flex-row{
+    flex-direction: row;
+  }
+  .gap-5{
+    gap: 200px;
   }
     
   .container-fluid{
@@ -17,7 +24,7 @@
     padding: 10px 30px;
   }
   
-  .gap_20{
+  .gap-20{
     gap: 20px;
   }
   

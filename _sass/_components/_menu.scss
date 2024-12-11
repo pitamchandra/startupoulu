@@ -21,7 +21,7 @@
   
             .nav-item {
               text-decoration: none;
-              color: $brand-color;
+              color: red;
               font-size: 16px;
               transition: color 0.3s ease;
   
@@ -34,3 +34,29 @@
       }
     }
   }
+
+  .background-img-home{
+    background-image: url('../../assets/images/home.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(182, 3, 3);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 0 1rem;
+    @media screen and (max-width: 768px){
+        font-size: 1.5rem;
+    }
+    @media screen and (max-width: 480px){
+        font-size: 1.2rem;
+    }
+}
