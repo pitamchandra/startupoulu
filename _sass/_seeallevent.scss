@@ -1,0 +1,56 @@
+// See all event text
+.see-all-event-text {
+  position: relative;
+  font-size: 18px;
+  color: #070540;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0 6rem 0;
+  text-align: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 7rem;
+    transform: translateY(-50%) rotate(-45deg);
+    width: 10px; // Size of arrowhead
+    height: 10px; // Size of arrowhead
+    border-right: 2px solid #e40f0f; // Arrowhead color
+    border-bottom: 2px solid #ff0000; // Arrowhead color
+    transition: left 0.5s ease-in-out;
+  }
+
+  &:hover::after {
+    left: 14.5rem; // Move arrowhead on hover
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 9rem;
+    transform: translateY(-50%);
+    height: 3px;
+    width: 120px;
+    background-color: #df0000;
+    transition: width 0.5s ease-in-out;
+  }
+
+  &:hover::before {
+    width: 240px; // Expand line on hover
+  }
+}
+
+// See all event section
+.see_event_img {
+  position: absolute;
+  right: 0;
+  top: -6rem;
+}
+
+.see-all-event-services {
+  margin-top: 3rem;
+  padding: 7rem 6rem;
+  background: transparent linear-gradient(119deg, #D4FBCD 0%, #E9DEFF 100%) 0% 0% no-repeat padding-box;
+}

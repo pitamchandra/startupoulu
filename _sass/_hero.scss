@@ -1,0 +1,91 @@
+// Background image for hero section
+.hero {
+    background: url('../assets/images/herobg.jpg') no-repeat center center;
+    background-size: cover;
+    filter: sepia(0.4) hue-rotate(300deg) saturate(2.5) brightness(1.1) contrast(0.9);
+  }
+  
+  // Inside hero section
+  .main-banner-h1-text {
+    font-size: 80px;
+    font-weight: 700;
+    width: 52rem;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 8rem;
+    padding-left: 1rem;
+    text-align: left;
+    background: #090541;
+  }
+  
+  .main-banner-h2-text {
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    width: 44rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    margin-left: 2rem;
+    padding: 0.5rem 0;
+    padding-left: 1rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: #090541;
+  }
+  
+  .main-banner-center {
+    margin-left: 5rem;
+  }
+  
+  // Bottom hero section
+  .banner-bottom {
+    background-color: #090541;
+    width: 95%;
+    margin-left: auto;
+  }
+  .text-and-long-arrow {
+    position: relative;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    padding-left: 4rem;
+    padding-right: 0rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: auto;
+    background-color: #090541;
+    text-align: left;
+    cursor: pointer;
+    transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 95px;
+      left: 40rem;
+      transform: translateY(-50%) rotate(-45deg);
+      width: 10px; /* Size of arrowhead */
+      height: 10px; /* Size of arrowhead */
+      border-right: 2px solid #ffffff; /* Arrowhead color */
+      border-bottom: 2px solid #ffffff; /* Arrowhead color */
+      transition: left 0.5s ease-in-out;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      top: 94px;
+      height: 2px;
+      width: 250px;
+      left: 25rem;
+      background-color: #ffffff;
+      transition: width 0.5s ease-in-out;
+    }
+    &:hover::before {
+      width: 500px;
+    }
+    &:hover::after {
+      left: 55.5rem;
+    }
+  }
+  
+  
+  

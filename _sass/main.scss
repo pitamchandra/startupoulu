@@ -1,8 +1,11 @@
 
 @import "_variables/variables";
 @import "_components/common";
-@import "_components/menu";
-@import "_components/pages/home";
+@import "_threecart.scss";
+@import "seeallevent";
+@import "header";
+@import "hero";
+@import "onlytext";
 
 
 
@@ -40,6 +43,10 @@ body {
   margin: 1rem;
   padding: 2rem;
 }
+
+// Add your custom CSS here
+// background colors
+
 
 
 @media (max-width: $breakpoint) {

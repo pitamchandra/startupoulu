@@ -2,8 +2,40 @@
 <html lang="en">
     {% include header.html %}
 <body>
-    <div class="background-img-home">
-        {% include navbar-items.html %}
-    </div>
+    <div class="hero">
+        <header class="header">
+          {% include logo.html %}
+          {% include nav.html %}
+        </header>
+      
+        <div class="section">
+          {% include main-banner.html %}
+        </div>
+        <div class="banner-bottom">
+          {% include main-banner-bottom.html %}
+        </div>
+      </div>
+      <!-- //hero ends here -->
+
+      <!-- only text section start -->
+      <section class="bg-color-blue">
+        <div class="bg-color-white width-95percent">
+          <p class="onlytext">Meet likeminded people at the events organized by Oulu startup ecosystem partners.</p>
+        </div>
+      </section>
+      <!-- only text section end -->
+
+       <!-- three cart section start -->
+      <section class="bg-color-white threecart-section">
+        {% include three-cart.html %}
+      </section>
+      <!-- three cart section end -->
+      
+      <!-- see all event section start -->
+      <section class="bg-color-white relative"> 
+          {% include see-all-events.html %}
+      </section>
+      
+      <footer class="footer">.footer</footer>
 </body>
 </html>
