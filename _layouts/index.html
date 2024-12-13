@@ -7,11 +7,18 @@
           {% include logo.html %}
           {% include nav.html %}
         </header>
-      
-        <div class="section">
-          {% include main-banner.html %}
-        </div>
-        <div class="banner-bottom">
+        <section class="banner">
+          <div class="r2a_container flex items-center">
+            <div class="main-banner-center">
+              <h3 class="main-banner-h1-text bg-color-blue">Innovation Starts Hear</h3>
+              <br>
+              <p class="main-banner-h2-text bg-color-blue">
+                join Oulu's startup community and fuel your growth
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="banner-bottom bg-color-blue">
           {% include main-banner-bottom.html %}
         </div>
       </div>
@@ -20,22 +27,175 @@
       <!-- only text section start -->
       <section class="bg-color-blue">
         <div class="bg-color-white width-95percent">
-          <p class="onlytext">Meet likeminded people at the events organized by Oulu startup ecosystem partners.</p>
+          <p class="onlytext">Meet likeminded people at the <br> events organized by Oulu <br> startup ecosystem partners.</p>
         </div>
       </section>
       <!-- only text section end -->
 
-       <!-- three cart section start -->
+       <!-- three cart event section start -->
       <section class="bg-color-white threecart-section">
         {% include three-cart.html %}
+        <a href="#" class="show_event_btn">SEE ALL EVENTS</a>
       </section>
-      <!-- three cart section end -->
-      
-      <!-- see all event section start -->
-      <section class="bg-color-white relative"> 
-          {% include see-all-events.html %}
+      <!-- three cart event section end -->
+
+      <!-- service section start -->
+      <section class="service">
+        <div class="r2a_container">
+          <div class="service_title common_title">No matter where you are on your journey, we have something to help your growth</div>
+          <div class="services">
+            <div class="common_side_title">SERVICES</div>
+            <div class="services_items flex justify-between gap-100">
+              <!-- service 1 -->
+              <div class="service_item">
+                <p class="service_num">01</p>
+                <div class="item_title">Mindset stage</div>
+                <p class="common_pera">You’ve heard about startups and now you are looking for an opportunity to learn more and get inspired. Find tools and resources to fuel your curiosity and nurture your entrepreneurial mindset!</p>
+                <a href="#" class="service_btn">GET ME STARTED!</a>
+              </div>
+              <!-- service 2 -->
+              <div class="service_item">
+                <p class="service_num">02</p>
+                <div class="item_title">Pre-startup</div>
+                <p class="common_pera">You have a scalable and innovative business idea and now require the right support to make it a tangible venture. Find local experts, funding opportunities, and tailored trainings to help you turn your concept into a real business!</p>
+                <a href="#" class="service_btn">LET’S GO!</a>
+                
+              </div>
+              <!-- service 3 -->
+              <div class="service_item">
+                <p class="service_num">03</p>
+                <div class="item_title">Startup</div>
+                <p class="common_pera">Having developed your MVP and established your company, it’s time to take your startup to new heights. Discover relevant networks, connect with valuable partners and attract potential investors to facilitate your growth!</p>
+                <a href="#" class="service_btn">CONNECT ME!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- service bg image -->
+        <img src="{{ site.baseurl }}/assets/images/service.png" alt="service images" class="service_image">
       </section>
+      <!-- service section ends -->
+
+      <!-- startup section start -->
+      <section class="startup_section">
+        <div class="r2a_container">
+          <h2 class="startup_title common_title">Take a look at Oulu’s startups</h2>
+          <div class="startups relative">
+            <div class="common_side_title">IN NUMBERS</div>
+            <div class="startups_items flex justify-between gap-100">
+              <!-- startup 1 -->
+              <div class="startups_item">
+                <div class="startups_num">421</div>
+                <div class="startups_label">VERIFIED STARTUPS</div>
+              </div>
+              <!-- startup 2 -->
+              <div class="startups_item">
+                <div class="startups_num">4</div>
+                <div class="startups_label">VC INVESTORS</div>
+              </div>
+              <!-- startup 3 -->
+              <div class="startups_item">
+                <div class="startups_num">250</div>
+                <div class="startups_label">FUNDING ROUNDS</div>
+              </div>
+              <!-- startup 4 -->
+              <div class="startups_item">
+                <div class="startups_num">4,876</div>
+                <div class="startups_label">STARTUP EMPLOYEES</div>
+              </div>
+            </div>
+            <div class="flex">
+              <a class="startup_link" href="#">DASHBOARD | THE OULU STARTUP ECOSYSTEM</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- startup section ends -->
+
+      <!-- newsletter section start -->
+      <section class="newsletter">
+        <div class="r2a_container flex items-center gap-100">
+          <div class="newsletter_content">
+            <h2 class="common_title color-white">Startup Oulu Newsletter</h2>
+            <p class="common_pera color-white">Subscribe to our newsletter and be the first one to <br> receive updates about Oulu startup ecosystem!</p>
+            <form action="">
+              <div class="form_group">
+                <label for="">Email:</label>
+                <input type="email" placeholder="">
+              </div>
+              <button type="submit">YES PLEASE!</button>
+            </form>
+          </div>
+          <div class="newsletter_image">
+            <img src="{{ site.baseurl }}/assets/images/newsletter.png" alt="newsletter image">
+          </div>
+        </div>
+      </section>
+      <!-- newsletter section ends -->
+
+      <!-- follow us section start -->
+      <section class="follow_section">
+        <div class="r2a_container">
+          <h2 class="common_title">Follow us on social media</h2>
+          <div class="user flex items-center gap-40">
+            <a href="#" class="instagram flex items-center gap-20"><img src="{{ site.baseurl }}/assets/images/instagram_musta_nelio.svg" alt="instagram logo"><span class="common_pera">@startupoulu</span></a>
+            <a href="#" class="linkedin flex items-center gap-20"><img src="{{ site.baseurl }}/assets/images/linkedin_musta_nelio.svg" alt="linkedin logo"><span class="common_pera">startupoulu</span></a>
+          </div>
+          <div class="follow_items flex justify-between gap-20">
+            <div class="follow_item flex items-center justify-center">
+              <a href="#" class="follow_icon "><img src="{{ site.baseurl }}/assets/images/insta_logo.svg" alt="insta logo"></a>
+            </div>
+            <div class="follow_item flex items-center justify-center">
+              <a href="#" class="follow_icon "><img src="{{ site.baseurl }}/assets/images/insta_logo.svg" alt="insta logo"></a>
+            </div>
+            <div class="follow_item flex items-center justify-center">
+              <a href="#" class="follow_icon "><img src="{{ site.baseurl }}/assets/images/insta_logo.svg" alt="insta logo"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- follow us section ends -->
       
-      <footer class="footer">.footer</footer>
+      <footer class="footer_section">
+        <div class="r2a_container flex justify-between gap-20">
+          <div class="info item">
+            <img class="footer_logo" src="{{ site.baseurl }}/assets/images/footer_logo.png" alt="footer logo">
+            <h3 class="info_title">Startup events, services and community</h3>
+            <p class="common_pera">Everything you need to know about the startup ecosystem in one place. Here you will find events for the aspiring entrepreneurs and enthusiasts. Soon we will add a database of services for startups provided by the public and private sectors in Oulu.</p>
+          </div>
+          <div class="blank item"></div>
+          <div class="find item">
+            <h3 class="find_title">Find us</h3>
+            <div class="flex gap-20 find_inner">
+              <i class="fa-solid fa-location-dot"></i>
+              <p class="common_pera">Startup Station Technopolis Ydinkeskus­ta Oulu Sepänkatu 20, 90100 Oulu</p>
+            </div>
+            <div class="flex gap-20 find_inner">
+              <i class="fa-solid fa-location-dot"></i>
+              <p class="common_pera">Startup Station Technopolis Ydinkeskus­ta Oulu Sepänkatu 20, 90100 Oulu</p>
+            </div>
+            <div class="flex gap-10 items-center  find_inner">
+              <a class="flex items-center justify-center" href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a class="flex items-center justify-center" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- copyright area start -->
+       <section class="copyright">
+        <div class="flex gap-20 justify-between items-center">
+          <img src="{{ site.baseurl }}/assets/images/1.png" alt="oam">
+          <img src="{{ site.baseurl }}/assets/images/2.png" alt="osao">
+          <img src="{{ site.baseurl }}/assets/images/3.png" alt="oulu">
+          <img src="{{ site.baseurl }}/assets/images/4.png" alt="oulu">
+          <img src="{{ site.baseurl }}/assets/images/5.png" alt="olues">
+          <img src="{{ site.baseurl }}/assets/images/6.png" alt="oia">
+          <img src="{{ site.baseurl }}/assets/images/7.png" alt="vtt">
+          <img src="{{ site.baseurl }}/assets/images/8.png" alt="pohjois">
+          <img src="{{ site.baseurl }}/assets/images/9.png" alt="the eu">
+          <img src="{{ site.baseurl }}/assets/images/10.png" alt="european union">
+        </div>
+       </section>
+      <!-- copyright area ends -->
 </body>
 </html>

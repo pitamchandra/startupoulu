@@ -6,8 +6,12 @@
 @import "header";
 @import "hero";
 @import "onlytext";
+@import "_pages/home";
 
 
+// responsive css like media queries
+
+@import "_responsive/home";
 
 *,
 *::before,
@@ -28,6 +32,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
 html,
 body {
   font-family: "Hanken Grotesk", sans-serif;
@@ -39,10 +47,7 @@ body {
   flex: 1;
   max-width: $breakpoint;
 }
-.section {
-  margin: 1rem;
-  padding: 2rem;
-}
+
 
 // Add your custom CSS here
 // background colors
@@ -50,8 +55,5 @@ body {
 
 
 @media (max-width: $breakpoint) {
-  .section {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-  }
+  
 };

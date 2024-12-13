@@ -1,10 +1,9 @@
 .onlytext {
     font-size: 50px;
-    color: #070540;
-    font-weight: bold;
+    color: $brand-color;
+    font-weight: 900;
     margin: 0;
     text-align: left;
-    max-width: 700px;
     padding-top: 6rem;
     padding-left: 7rem;
     @media (max-width: 500px) {

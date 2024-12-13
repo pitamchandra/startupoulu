@@ -1,6 +1,15 @@
 .threecart-section {
-  
   padding: 6rem 0rem 6rem 0rem;
+  text-align: center;
+}
+.show_event_btn{
+  color: $brand-color;
+  font-size: $font-size-18;
+  letter-spacing: 3.6px;
+  font-weight: 900;
+  text-decoration: none;
+  margin-top: 90px;
+  display: inline-block;
 }
 .cart-text {
   
@@ -8,7 +17,7 @@
 }
 .cart-text-h3 {
   font-size: 30px;
-  color: #070540;
+  color: $brand-color;
   font-weight: extra-bold;
   margin: 0;
   padding: 0;
@@ -16,7 +25,7 @@
 }
 .cart-text-p {
   font-size: 16px;
-  color: #070540;
+  color: $brand-color;
   font-weight: bold;
   margin: 0;
   padding: 0;
@@ -42,7 +51,7 @@
   transition: 0.5s;
   background: #E9DEFF;
   &:hover{
-    box-shadow: 8px 8px 1px 0px #070540; 
+    box-shadow: 8px 8px 1px 0px $brand-color; 
     
   }
   &:hover .overlayText {
