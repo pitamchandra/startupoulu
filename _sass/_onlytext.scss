@@ -1,21 +1,8 @@
 .onlytext {
-    font-size: 50px;
-    color: $brand-color;
-    font-weight: 900;
-    margin: 0;
-    text-align: left;
-    padding-top: 6rem;
-    padding-left: 7rem;
-    @media (max-width: 500px) {
-      max-width: 100%;
-    }
-  }
-  .width-95percent {
-    width: 95%;
-    
-    @media (max-width: 500px) {
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-    }
-  }
+  font-size: 50px;
+  color: $brand-color;
+  font-weight: 900;
+  margin: 0;
+  text-align: left;
+  padding-top: 6rem;
+}

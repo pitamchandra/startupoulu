@@ -1,27 +1,136 @@
+// header css =========
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-  }
-  .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  .nav_bar {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    margin-right: 2rem;
+    gap: 32px;
+    margin-right: 32px;
+    ul{
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      li{
+        position: relative;
+        .nav-item{
+          font-size: 23px;
+          font-weight: 700;
+          color: $brand-color;
+          text-decoration: none;
+          padding: 0.5rem 16px;
+          &:hover{
+            background-color: #070540;
+            color: #fff;
+          }
+        }
+        &:hover ul{
+          display: block;
+          opacity: 1;
+          visibility: visible;
+          transition: all 0.5s;
+        }
+        ul{
+          position: absolute;
+          opacity: 0;
+          display: block;
+          visibility: hidden;
+          top: 120%;
+          background-color: $white-color;
+          // border-radius: 10px;
+          // padding: 20px;
+          overflow: hidden;
+          width: 200px;
+          // height: 200px;
+          text-align: center;
+          transition: all 0.5s;
+          box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+          li{
+            .nav-item{
+              color: $brand-color;
+              font-size: 18px;
+              font-weight: 700;
+              text-decoration: none;
+              padding: 10px 16px;
+              display: block;
+              &:hover{
+                background-color: $brand-color;
+                color: $white-color;
+              }
+            }
+          }
+        }
+      }
+    }
   }
-  .nav-item {
-    text-decoration: none;
-    color: #070540;
-    font-size: 23px;
-    padding: 0.5rem 1rem;
+  .mobile_nav_bar{
+    display: none;
+    ul{
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      li{
+        position: relative;
+        .nav-item{
+          font-size: 23px;
+          font-weight: 700;
+          color: $brand-color;
+          text-decoration: none;
+          padding: 0.5rem 16px;
+          &:hover{
+            background-color: #070540;
+            color: #fff;
+          }
+        }
+        &:hover ul{
+          display: block;
+          opacity: 1;
+          visibility: visible;
+          transition: all 0.5s;
+        }
+        ul{
+          position: absolute;
+          opacity: 0;
+          display: block;
+          visibility: hidden;
+          top: 120%;
+          background-color: $white-color;
+          // border-radius: 10px;
+          // padding: 20px;
+          overflow: hidden;
+          width: 200px;
+          // height: 200px;
+          text-align: center;
+          transition: all 0.5s;
+          box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+          li{
+            .nav-item{
+              color: $brand-color;
+              font-size: 18px;
+              font-weight: 700;
+              text-decoration: none;
+              padding: 10px 16px;
+              display: block;
+              &:hover{
+                background-color: $brand-color;
+                color: $white-color;
+              }
+            }
+          }
+        }
+      }
+    }
   }
-  .nav-item:hover {
-    background-color: #070540;
-    color: #fff;
+  .toggle_btn{
+    display: none;
+    font-size: 30px;
+    color: $brand-color;
+    cursor: pointer;
   }
-  
+}
   
   .nav-logo {
     display: inline-block;

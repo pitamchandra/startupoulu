@@ -1,4 +1,23 @@
 // hero section responsive css--------
+// for mobile
+
+@media (max-width: 767px) {
+    .toggle_btn{
+        display: block !important;
+    }
+    .nav_bar{
+        display: none !important;
+    }
+    .mobile_nav_bar{
+        display: block;
+    }
+    .r2a_container{
+        width: 100%;
+    }
+}
+
+// for tablet
+
 
 
 // event section responsive css--------

@@ -32,55 +32,8 @@
   .main-banner-center {
     margin-left: 5rem;
   }
-  
-  // Bottom hero section
-  .banner-bottom {
-    width: 95%;
-    margin-left: auto;
-  }
-  .text-and-long-arrow {
-    position: relative;
-    font-size: 20px;
-    color: #fff;
-    margin-top: 2rem;
-    margin-bottom: 0rem;
-    padding-left: 4rem;
-    padding-right: 0rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    width: auto;
-    text-align: left;
-    cursor: pointer;
-    transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
-    &::after {
-      content: '';
-      position: absolute;
-      top: 95px;
-      left: 40rem;
-      transform: translateY(-50%) rotate(-45deg);
-      width: 10px; /* Size of arrowhead */
-      height: 10px; /* Size of arrowhead */
-      border-right: 2px solid #ffffff; /* Arrowhead color */
-      border-bottom: 2px solid #ffffff; /* Arrowhead color */
-      transition: left 0.5s ease-in-out;
-    }
-    &::before {
-      position: absolute;
-      content: "";
-      top: 94px;
-      height: 2px;
-      width: 250px;
-      left: 25rem;
-      background-color: #ffffff;
-      transition: width 0.5s ease-in-out;
-    }
-    &:hover::before {
-      width: 500px;
-    }
-    &:hover::after {
-      left: 55.5rem;
-    }
-  }
+ 
+
   
   
   

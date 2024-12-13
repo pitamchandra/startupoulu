@@ -5,7 +5,13 @@
     <div class="hero">
         <header class="header">
           {% include logo.html %}
-          {% include nav.html %}
+          <nav class="nav_bar">
+            {% include nav.html %}
+          </nav>
+          <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+          <nav class="mobile_nav_bar">
+            {% include nav.html %}
+          </nav>
         </header>
         <section class="banner">
           <div class="r2a_container flex items-center">
@@ -18,26 +24,29 @@
             </div>
           </div>
         </section>
-        <div class="banner-bottom bg-color-blue">
-          {% include main-banner-bottom.html %}
+        <!-- banner_bottom_section -->
+        <div class="banner_bottom_section">
+          <div class="r2a_container bg-color-blue">
+            <a href="#" class="text-and-long-arrow">EVERYTHING YOU NEED TO KNOW</a>
+          </div>
         </div>
       </div>
-      <!-- //hero ends here -->
+      <!-- hero ends here -->
 
-      <!-- only text section start -->
-      <section class="bg-color-blue">
-        <div class="bg-color-white width-95percent">
+      <!-- event title section start -->
+      <section class="event_title_section">
+        <div class="r2a_container bg-color-white">
           <p class="onlytext">Meet likeminded people at the <br> events organized by Oulu <br> startup ecosystem partners.</p>
         </div>
       </section>
-      <!-- only text section end -->
+      <!-- event title section end -->
 
-       <!-- three cart event section start -->
-      <section class="bg-color-white threecart-section">
+      <!--  event section start -->
+      <section class="bg-color-white threecart-section event_section">
         {% include three-cart.html %}
         <a href="#" class="show_event_btn">SEE ALL EVENTS</a>
       </section>
-      <!-- three cart event section end -->
+      <!--  event section end -->
 
       <!-- service section start -->
       <section class="service">
@@ -197,5 +206,7 @@
         </div>
        </section>
       <!-- copyright area ends -->
+ 
+    {% include script.html %}
 </body>
 </html>
