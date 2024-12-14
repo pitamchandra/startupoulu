@@ -1,69 +1,166 @@
 // banner section css =========
-.banner{
-    height: 80vh;
-    .r2a_container{
-        height: 100%;
+
+.hero {
+    background: url('../assets/images/herobg.jpg') no-repeat center center;
+    background-size: cover;
+    // filter: sepia(0.4) hue-rotate(300deg) saturate(2.5) brightness(1.1) contrast(0.9);
+    .banner{
+        height: 80vh;
+        .r2a_container{
+            height: 100%;
+            .main-banner-center {
+                margin-left: 5rem;
+                .main-banner-h1-text {
+                    font-size: 80px;
+                    font-weight: 700;
+                    color: #fff;
+                    display: inline-block;
+                    margin-bottom: -15px;
+                    margin-top: 8rem;
+                    padding: 0 1rem ;
+                    text-align: left;
+                }
+                  .main-banner-h2-text {
+                    font-size: 30px;
+                    font-weight: 400;
+                    color: #fff;
+                    display: inline-block;
+                    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+                    text-align: left;
+                    margin-left: 2rem;
+                    padding: 1rem ;
+                    font-family: 'Hanken Grotesk', sans-serif;
+                }
+            }
+        }
     }
-}
-.banner_bottom_section{
-    background: $brand-color;
-    background: linear-gradient(90deg, transparent 61%, $brand-color 61%);
-    .r2a_container{
-        .text-and-long-arrow {
-            position: relative;
-            font-size: 20px;
-            color: #fff;
-            margin-top: 2rem;
-            margin-bottom: 0rem;
-            padding-left: 4rem;
-            padding-right: 0rem;
-            padding-top: 5rem;
-            padding-bottom: 5rem;
-            width: auto;
-            text-align: left;
-            cursor: pointer;
-            transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
-            display: block;
-            text-decoration: none;
-            &::after {
-              content: '';
-              position: absolute;
-              top: 95px;
-              left: 40rem;
-              transform: translateY(-50%) rotate(-45deg);
-              width: 10px; /* Size of arrowhead */
-              height: 10px; /* Size of arrowhead */
-              border-right: 2px solid #ffffff; 
-              border-bottom: 2px solid #ffffff; 
-              transition: left 0.5s ease-in-out;
+    .banner_bottom_section{
+        background: $brand-color;
+        background: linear-gradient(90deg, transparent 61%, $brand-color 61%);
+        display: block;
+        .r2a_container{
+            .bg-color-blue{
+                padding: 96px 82px;
+                a{
+                    font-size: 20px;
+                    color: #fff;
+                    font-weight: 500;
+                    letter-spacing: 4px;
+                    text-decoration: none;
+                    .common_arrow{
+                        width: 250px;
+                    }
+                    &:hover{
+                        .common_arrow{
+                            width: 500px;
+                        }
+                    }
+                }
             }
-            &::before {
-              position: absolute;
-              content: "";
-              top: 94px;
-              height: 2px;
-              width: 250px;
-              left: 25rem;
-              background-color: #ffffff;
-              transition: width 0.5s ease-in-out;
-            }
-            &:hover::before {
-              width: 500px;
-            }
-            &:hover::after {
-              left: 55.5rem;
-            }
-          
+            
         }
     }
 }
-
+  
 // event section css =========
 
 .event_title_section{
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 61%, $brand-color 60%);
+    .common_title{
+        padding-top: 100px;
+        width: 700px;
+    }
 }
+.event_section {
+    padding: 6rem 0rem 6rem 0rem;
+    text-align: center;
+  }
+  .show_event_btn{
+    color: $brand-color;
+    font-size: $font-size-18;
+    letter-spacing: 3.6px;
+    font-weight: 900;
+    text-decoration: none;
+    margin-top: 90px;
+    .common_arrow{
+        background-color: $brand-color;
+        width: 130px;
+        &::after{
+            border-right: 1px solid $brand-color; 
+            border-bottom: 1px solid $brand-color;
+        }
+    }
+    
+  }
+  .cart-text {
+    
+    padding: 2.5rem;
+  }
+  .cart-text-h3 {
+    font-size: 30px;
+    color: $brand-color;
+    font-weight: extra-bold;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  .cart-text-p {
+    font-size: 16px;
+    color: $brand-color;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  
+  
+  .overlayText {
+    opacity: 0;
+    color: white;
+    position: absolute;
+    inset: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    background: $cart-overlay-bg;
+  }
+  
+  
+  .cart {
+    width: 33.33%;
+    transition: 0.5s;
+    background: #E9DEFF;
+    &:hover{
+      box-shadow: 8px 8px 1px 0px $brand-color; 
+      
+    }
+    &:hover .overlayText {
+      opacity: 1;
+    }
+  }
+  
+  .maincart {
+    margin: 0 auto;
+  }
+  .absolute_img_txt {
+    margin: 0;
+    z-index: 10;
+    margin-top: -28px;
+    padding: 0.2rem 1.5rem;
+    color: white;
+    font-size: 16px;
+    z-index: 1;
+  }
+  .inside_cart_date_img {
+    width: auto;
+    height: 20px;
+  }
+  .inside_cart_bg_img {
+    width: 100%;
+    // height: 210px;
+  }
 
 // service section css =========
 .service{
@@ -149,7 +246,7 @@
                     letter-spacing: 2.8px; 
                 }
             }
-            .flex{
+            .startup_bottom{
                 .startup_link{
                     font-size: 14px;
                     line-height: 22px;
@@ -157,6 +254,19 @@
                     color: $brand-color; 
                     letter-spacing: 2.8px; 
                     text-decoration: none;
+                    .common_arrow{
+                        background: $brand-color;
+                        width: 60px;
+                        &::after{
+                            border-right: 1px solid $brand-color; 
+                            border-bottom: 1px solid $brand-color;
+                        }
+                    }
+                    &:hover{
+                        .common_arrow{
+                            width: 200px;
+                        }
+                    }
                 }
             }
         }
@@ -310,4 +420,9 @@
 
 .copyright{
     padding: 1rem 2rem;
+    .flex{
+        img{
+            
+        }
+    }
 }

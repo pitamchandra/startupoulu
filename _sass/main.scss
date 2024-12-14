@@ -3,8 +3,6 @@
 @import "_components/common";
 @import "_threecart.scss";
 @import "header";
-@import "hero";
-@import "onlytext";
 @import "_pages/home";
 
 
@@ -39,13 +37,13 @@ html,
 body {
   font-family: "Hanken Grotesk", sans-serif;
 }
-.container {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding: 2rem;
-  flex: 1;
-  max-width: $breakpoint;
-}
+// .container {
+//   margin-top: 2rem;
+//   margin-bottom: 2rem;
+//   padding: 2rem;
+//   flex: 1;
+//   max-width: $breakpoint;
+// }
 
 
 // Add your custom CSS here

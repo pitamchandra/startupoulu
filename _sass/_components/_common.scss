@@ -3,7 +3,6 @@
 .flex{
     display: flex 
   }
-
 .justify-center{
   justify-content: center; 
 }
@@ -11,7 +10,6 @@
 .flex-col{
   flex-direction: column;
 }
-
 .flex-row{
   flex-direction: row;
 }
@@ -26,7 +24,6 @@
 }
   
 .container-fluid{
-
   width:100%;
   padding: 10px 30px;
 }
@@ -146,4 +143,34 @@
   color: $brand-color;
 }
 
+.d_none{
+  display: none;
+}
+.d_block{
+  display: block;
+}
+.common_arrow{
+  width: 50px;
+  height: 1px;
+  background-color: $white-color;
+  position: relative;
+  transition: all 0.5s;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%) rotate(-45deg);
+    width: 15px;
+    height: 15px;
+    border-right: 1px solid $white-color; 
+    border-bottom: 1px solid $white-color; 
+  }
+}
+
+.active{
+  display: block !important;
+  opacity: 1 !important;
+  transition: all 0.5s !important; 
+}
 // common button css

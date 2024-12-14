@@ -10,6 +10,16 @@
           </nav>
           <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
           <nav class="mobile_nav_bar">
+            <div class="r2a_container">
+              <div class="flex justify-between items-center">
+                <div class="logo">
+                  <a href="{{ site.baseurl }}/index.html">
+                    <img src="{{ site.baseurl }}/assets/images/mobile-logo.png" alt="logo">
+                  </a>
+                </div>
+                <div class="close_btn"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+          </div>
             {% include nav.html %}
           </nav>
         </header>
@@ -26,17 +36,30 @@
         </section>
         <!-- banner_bottom_section -->
         <div class="banner_bottom_section">
-          <div class="r2a_container bg-color-blue">
-            <a href="#" class="text-and-long-arrow">EVERYTHING YOU NEED TO KNOW</a>
+          
+          <div class="r2a_container">
+            <div class="bg-color-blue flex">
+              <a href="#" class="flex items-center gap-20">EVERYTHING YOU NEED TO KNOW <div class="common_arrow"></div></a>
+            </div>
           </div>
         </div>
-      </div>
+        
+        <div class="mobile_banner_bottom d_none">
+          <div class="r2a_container ">
+            <div class="bg-color-blue flex items-center justify-between">
+              <a href="#" class="">LINK HERE</a>
+              <div class="common_arrow"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+      <!-- <i class="fa-solid fa-arrow-right-long"></i> -->
       <!-- hero ends here -->
 
       <!-- event title section start -->
       <section class="event_title_section">
         <div class="r2a_container bg-color-white">
-          <p class="onlytext">Meet likeminded people at the <br> events organized by Oulu <br> startup ecosystem partners.</p>
+          <h2 class="common_title">Meet likeminded people at the events organized by Oulu startup ecosystem partners.</h2>
         </div>
       </section>
       <!-- event title section end -->
@@ -44,7 +67,9 @@
       <!--  event section start -->
       <section class="bg-color-white threecart-section event_section">
         {% include three-cart.html %}
-        <a href="#" class="show_event_btn">SEE ALL EVENTS</a>
+        <div class="flex justify-center items-center">
+          <a href="#" class="show_event_btn flex items-center gap-20">SEE ALL EVENTS <div class="common_arrow"></div> </a>
+        </div>
       </section>
       <!--  event section end -->
 
@@ -113,8 +138,8 @@
                 <div class="startups_label">STARTUP EMPLOYEES</div>
               </div>
             </div>
-            <div class="flex">
-              <a class="startup_link" href="#">DASHBOARD | THE OULU STARTUP ECOSYSTEM</a>
+            <div class="flex startup_bottom">
+              <a class="startup_link flex items-center gap-10" href="#">DASHBOARD | THE OULU STARTUP ECOSYSTEM <div class="common_arrow"></div></a>
             </div>
           </div>
         </div>
@@ -158,6 +183,9 @@
               <a href="#" class="follow_icon "><img src="{{ site.baseurl }}/assets/images/insta_logo.svg" alt="insta logo"></a>
             </div>
             <div class="follow_item flex items-center justify-center">
+              <a href="#" class="follow_icon "><img src="{{ site.baseurl }}/assets/images/insta_logo.svg" alt="insta logo"></a>
+            </div>
+            <div class="follow_item flex items-center justify-center d_none">
               <a href="#" class="follow_icon "><img src="{{ site.baseurl }}/assets/images/insta_logo.svg" alt="insta logo"></a>
             </div>
           </div>
