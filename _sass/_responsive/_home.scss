@@ -1,14 +1,12 @@
 
 // for mobile
-
-@media (max-width: 767px) {
-
+@media (max-width: 767.98px) {
+// =================== home page responsive css ===================
     // common css--------   
     .r2a_container{
         padding: 0 50px;
         width: 100% !important;
     }
-    
     .common_title {
         font-size: 30px;
         line-height: 35px;
@@ -18,13 +16,15 @@
         font-size: 30px;
         line-height: 40px;
     }
-
     // header responsive css--------
     .toggle_btn{
         display: block !important;
     }
     .nav_bar{
         display: none !important;
+    }
+    .nav-logo{
+        margin: 0;
     }
     .common_side_title {
         top: 150px;
@@ -87,13 +87,25 @@
     }
     .event_section{
         padding: 50px 0;
-        .flex{
-            flex-direction: column !important;
+        .r2a_container{
+            padding: 0 0px;
+        }
+        .show_event_btn {
+            .common_arrow{
+                background-color: $brand-color;
+                width: 60px;
+            }
         }
     }
-    .cart {
+    
+    .card {
         width: 100%;
+        min-height: 630px;
+        .card_content {
+            padding: 20px;
+        }
     }
+
     // service section responsive css--------
     .service{
         padding: 50px 0;
@@ -121,7 +133,7 @@
             top: 152px;
             
         }
-    }  
+    }
     
     // startup section responsive css--------
     .startup_section {
@@ -229,10 +241,279 @@
 }
 
 // for tablet
+@media (min-width: 768px) and (max-width: 991.98px){
+    // =================== home page responsive css ===================
+    // common css--------
+    .r2a_container{
+        padding: 0 50px;
+        width: 100% !important;
+    }
+    .common_title {
+        font-size: 40px;
+        line-height: 50px;
+    }
 
+    .card{
+        .card_content{
+            .card_title{
+                font-size: 24px;
+                line-height: 26px;
+            }
+        }
+    }
 
+    // banner section responsive css--------
+    .main-banner-center {
+        margin-left: 0px !important;
+    }
+    .hero{
+        .banner{
+            .r2a_container{
+                .main-banner-center{
+                    .main-banner-h1-text{
+                        font-size: 64px;
+                        width: 378px;
+                    }
+                    .main-banner-h2-text{
+                        font-size: 18px;
+                        font-weight: 300;
+                        margin-left: 0;
+                        width: 280px;
+                    }
+                    .main-banner-h2-text {
+                        font-size: 26px;
+                        margin-left: 16px;
+                        width: 378px;
+                    }
+                }
+            }
+        }
+        .banner_bottom_section{
+            .r2a_container{
+                .bg-color-blue{
+                    padding: 40px 30px !important;
+                    a{
+                        font-size: 16px !important;
+                        .common_arrow{
+                            width: 177px;
+                        }
+                        &:hover{
+                            .common_arrow{
+                                width: 180px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 
-// event section responsive css--------
+    // event section responsive css--------
+    .event_title_section {
+        .common_title{
+            padding-top: 50px;
+            width: 70%;
+        }
+        
+    }
+    .show_event_btn {
+        margin-bottom: 60px;
+    }
 
+    // service section responsive css--------
+    .service{
+        padding: 80px 0;
+        .r2a_container{
+            .services{
+                .services_items{
+                    margin-left: 60px;
+                    flex-wrap: wrap;
+                    gap: 40px;
+                    .service_item{
+                        width: 45%;
+                        .item_title {
+                            font-size: 30px;
+                            line-height: 40px;
+                        }
+                    }
+                }
+            }
+            .service_title {
+                width: 387px;
+                margin-bottom: 50px;
+            }
+        }
+        .service_image{
+            top: -142px;
+        }
+    }  
 
-// service section responsive css--------
+    // startup section responsive css--------
+    .startup_section{
+        padding: 50px 0;
+        .r2a_container{
+            .startups{
+                .startups_items{
+                    padding-left: 60px;
+                    margin: 50px 0;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                    .startups_item{
+                        width: 45%;
+                    }
+                    .startups_num{
+                        margin-bottom: 20px;
+                    }
+                }
+                .common_side_title{
+                    // left: -70px;
+                }
+                .startup_bottom{
+                    // display: none;
+                }
+            }
+        }
+    } 
+
+    // follow section responsive css--------
+    .follow_section {
+        padding: 60px 0;
+        .r2a_container{
+            .follow_items{
+                .follow_item{
+                    width: 376px;
+                    height: 200px;
+                    background-color: #EAEAEA;
+                }
+            }
+        }
+    }
+    .follow_section .r2a_container .follow_items .follow_item {
+        width: 376px;
+        height: 200px;
+        background-color: #EAEAEA;
+    }
+    // footer section responsive css--------
+    .footer_section {
+        padding: 60px 0;
+        .r2a_container{
+            .info{
+                .item{
+                    // width: 100%;
+                }
+            }
+            .find{
+                .find_inner{
+                    .common_pera{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+    .blank{
+        display: none;
+    }
+    .copyright{
+        .flex{
+            flex-wrap: wrap !important;
+            justify-content: center !important;
+            img{
+                width: 15% !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    // common css--------
+    .r2a_container{
+        padding: 0 50px;
+        width: 100% !important;
+    }
+    .common_title {
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 700;
+    }
+    .item_title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    // banner section responsive css--------
+    .hero {
+        .banner {
+            .r2a_container {
+                .main-banner-center {
+                    .main-banner-h1-text {
+                        font-size: 60px;
+                        width: 500px;
+                    }
+                    .main-banner-h2-text {
+                        margin-left: 1px;
+                    }
+                }
+            }
+        }
+        .banner_bottom_section {
+            .r2a_container {
+                .bg-color-blue {
+                    padding: 70px 50px !important;
+                    a {
+                        font-size: 16px !important;
+                        .common_arrow {
+                            width: 250px;
+                        }
+                        &:hover {
+                            .common_arrow {
+                                width: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // service section responsive css--------
+    .service{
+        padding: 80px 0;
+        .r2a_container{
+            .services{
+                .services_items{
+                    gap: 40px;
+                }
+            }
+            .service_title {
+                width: 400px;
+                margin-bottom: 181px;
+            }
+        }
+        
+    }
+    // startup section responsive css--------
+    .startup_section {
+        padding: 50px 0;
+        .r2a_container {
+            .startups {
+                .startups_items {
+                    padding-left: 80px;
+                    margin: 100px 0;
+                    gap: 40px;
+                }
+            }
+        }
+    }
+    .copyright{
+        .flex{
+            flex-wrap: wrap !important;
+            justify-content: left !important;
+            
+        }
+    }
+    
+    
+}

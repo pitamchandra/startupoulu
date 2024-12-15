@@ -1,14 +1,16 @@
 
 @import "_variables/variables";
 @import "_components/common";
-@import "_threecart.scss";
-@import "header";
+@import "_components/event_card";
+@import "_components/menu";
 @import "_pages/home";
+@import "_pages/event";
 
 
 // responsive css like media queries
 
 @import "_responsive/home";
+@import "_responsive/event";
 
 *,
 *::before,
@@ -48,6 +50,7 @@ body {
 
 // Add your custom CSS here
 // background colors
+
 
 
 

@@ -35,7 +35,6 @@
 .gap-10{
   gap: 10px;
 }
-
 .gap-20{
   gap: 20px;
 }
@@ -88,33 +87,7 @@
 .absolute {
   position: absolute;
 }
-.font-size-16 {
-  font-size: 16px;
-}
-.font-size-18 {
-  font-size: 18px;
-}
-.font-size-20 {
-  font-size: 20px;
-}
-.font-size-24 {
-  font-size: 24px;
-}
-.font-size-28 {
-  font-size: 28px;
-}
-.font-size-32 {
-  font-size: 32px;
-}
-.font-size-36 {
-  font-size: 36px;
-}
-.font-size-40 {
-  font-size: 40px;
-}
-.font-size-44 {
-  font-size: 44px;
-}
+
 .common_title{
   font-size: 50px;
   line-height: 60px;
@@ -166,6 +139,13 @@
     border-right: 1px solid $white-color; 
     border-bottom: 1px solid $white-color; 
   }
+}
+
+.underline{
+  width: 120px;
+  height: 1px;
+  background-color: $brand-color;
+  transition: all 0.5s;
 }
 
 .active{

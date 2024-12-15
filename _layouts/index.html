@@ -65,8 +65,68 @@
       <!-- event title section end -->
 
       <!--  event section start -->
-      <section class="bg-color-white threecart-section event_section">
-        {% include three-cart.html %}
+      <section class="event_section">
+        <div class="r2a_container">
+          <div class="event_wrapper">
+            <div class="card event_card">
+              <div class="card_img">
+               <img src="{{ site.baseurl }}/assets/images/herobg.jpg" alt="">
+               <div class="overlayText flex items-center justify-center">MORE ABOUT THIS EVENT</div>
+               <a class="absolute card_badge bg-color-pink">Today</a>
+              </div>
+              <div class="card_content">
+                  <a href="#" class="card_title">Kaleva 2030 Hackathon</a>
+                  <div class="card_meta flex gap-10">
+                    <i class="fa-regular fa-calendar-days card_icon"></i>
+                    <div class="card_date">
+                      <a href="#">November 14, 2024 12:00</a>
+                      <br>
+                      <a href="#">November 16, 2024 16:00</a>
+                    </div>
+                  </div>
+                  <p class="common_pera">Kaleva Media celebrates the 125th anniversary of the newspaper Kaleva by organizing a hackathon event for university and college students. Gather a team of 3-6 people, sign up and get ready to create something new. Winning team gets a grand prize of 5000€! Travel, accommodation and food are paid for. Enrollment through your own university.</p>
+              </div>
+            </div>
+            <div class="card event_card">
+              <div class="card_img">
+               <img src="{{ site.baseurl }}/assets/images/herobg.jpg" alt="">
+               <div class="overlayText flex items-center justify-center">MORE ABOUT THIS EVENT</div>
+               <a class="absolute card_badge bg-color-pink">TOMORROW</a>
+              </div>
+              <div class="card_content">
+                  <a href="#" class="card_title">Slush Oulu Community Side Event & Pitching Competition 15.11.2024</a>
+                  <div class="card_meta flex gap-10">
+                    <i class="fa-regular fa-calendar-days card_icon"></i>
+                    <div class="card_date">
+                      <a href="#">November 15, 2024 14:00</a>
+                      <br>
+                      <a href="#">November 15, 2024 18:00</a>
+                    </div>
+                  </div>
+                  <p class="common_pera">Slush is the world’s leading startup event that takes place in Helsinki every year, bringing together top startups and world-class investors. This year’s…</p>
+              </div>
+            </div>
+            <div class="card event_card">
+              <div class="card_img">
+               <img src="{{ site.baseurl }}/assets/images/herobg.jpg" alt="">
+               <div class="overlayText flex items-center justify-center">MORE ABOUT THIS EVENT</div>
+               <a class="absolute card_badge bg-color-pink">THIS WEEK</a>
+              </div>
+              <div class="card_content">
+                  <a href="#" class="card_title">Kickstart business idea competition finale</a>
+                  <div class="card_meta flex gap-10">
+                    <i class="fa-regular fa-calendar-days card_icon"></i>
+                    <div class="card_date">
+                      <a href="#">November 27, 2024 12:00</a>
+                      <br>
+                      <a href="#">November 27, 2024 18:00</a>
+                    </div>
+                  </div>
+                  <p class="common_pera">Kickstart business idea competition brings together the students of Oamk, University of Oulu and OSAO. Come and watch the competition finale where the teams compete for cash prizes of 1500€, 1000€ and 500€ by pitching their business idea!</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="flex justify-center items-center">
           <a href="#" class="show_event_btn flex items-center gap-20">SEE ALL EVENTS <div class="common_arrow"></div> </a>
         </div>
@@ -119,22 +179,22 @@
             <div class="startups_items flex justify-between gap-100">
               <!-- startup 1 -->
               <div class="startups_item">
-                <div class="startups_num">421</div>
+                <div class="startups_num counter">421</div>
                 <div class="startups_label">VERIFIED STARTUPS</div>
               </div>
               <!-- startup 2 -->
               <div class="startups_item">
-                <div class="startups_num">4</div>
+                <div class="startups_num counter">4</div>
                 <div class="startups_label">VC INVESTORS</div>
               </div>
               <!-- startup 3 -->
               <div class="startups_item">
-                <div class="startups_num">250</div>
+                <div class="startups_num counter">250</div>
                 <div class="startups_label">FUNDING ROUNDS</div>
               </div>
               <!-- startup 4 -->
               <div class="startups_item">
-                <div class="startups_num">4,876</div>
+                <div class="startups_num counter">4,876</div>
                 <div class="startups_label">STARTUP EMPLOYEES</div>
               </div>
             </div>
@@ -147,94 +207,12 @@
       <!-- startup section ends -->
 
       <!-- newsletter section start -->
-      <section class="newsletter">
-        <div class="r2a_container flex items-center gap-100">
-          <div class="newsletter_content">
-            <h2 class="common_title color-white">Startup Oulu Newsletter</h2>
-            <p class="common_pera color-white">Subscribe to our newsletter and be the first one to <br> receive updates about Oulu startup ecosystem!</p>
-            <form action="">
-              <div class="form_group">
-                <label for="">Email:</label>
-                <input type="email" placeholder="">
-              </div>
-              <button type="submit">YES PLEASE!</button>
-            </form>
-          </div>
-          <div class="newsletter_image">
-            <img src="{{ site.baseurl }}/assets/images/newsletter.png" alt="newsletter image">
-          </div>
-        </div>
-      </section>
+      {% include newsletter.html %}
       <!-- newsletter section ends -->
-
       <!-- follow us section start -->
-      <section class="follow_section">
-        <div class="r2a_container">
-          <h2 class="common_title">Follow us on social media</h2>
-          <div class="user flex items-center gap-40">
-            <a href="#" class="instagram flex items-center gap-20"><img src="{{ site.baseurl }}/assets/images/instagram_musta_nelio.svg" alt="instagram logo"><span class="common_pera">@startupoulu</span></a>
-            <a href="#" class="linkedin flex items-center gap-20"><img src="{{ site.baseurl }}/assets/images/linkedin_musta_nelio.svg" alt="linkedin logo"><span class="common_pera">startupoulu</span></a>
-          </div>
-          <div class="follow_items flex justify-between gap-20">
-            <div class="follow_item flex items-center justify-center">
-              <a href="#" class="follow_icon "><img src="{{ site.baseurl }}/assets/images/insta_logo.svg" alt="insta logo"></a>
-            </div>
-            <div class="follow_item flex items-center justify-center">
-              <a href="#" class="follow_icon "><img src="{{ site.baseurl }}/assets/images/insta_logo.svg" alt="insta logo"></a>
-            </div>
-            <div class="follow_item flex items-center justify-center">
-              <a href="#" class="follow_icon "><img src="{{ site.baseurl }}/assets/images/insta_logo.svg" alt="insta logo"></a>
-            </div>
-            <div class="follow_item flex items-center justify-center d_none">
-              <a href="#" class="follow_icon "><img src="{{ site.baseurl }}/assets/images/insta_logo.svg" alt="insta logo"></a>
-            </div>
-          </div>
-        </div>
-      </section>
+      {% include follow.html %}
       <!-- follow us section ends -->
-      
-      <footer class="footer_section">
-        <div class="r2a_container flex justify-between gap-20">
-          <div class="info item">
-            <img class="footer_logo" src="{{ site.baseurl }}/assets/images/footer_logo.png" alt="footer logo">
-            <h3 class="info_title">Startup events, services and community</h3>
-            <p class="common_pera">Everything you need to know about the startup ecosystem in one place. Here you will find events for the aspiring entrepreneurs and enthusiasts. Soon we will add a database of services for startups provided by the public and private sectors in Oulu.</p>
-          </div>
-          <div class="blank item"></div>
-          <div class="find item">
-            <h3 class="find_title">Find us</h3>
-            <div class="flex gap-20 find_inner">
-              <i class="fa-solid fa-location-dot"></i>
-              <p class="common_pera">Startup Station Technopolis Ydinkeskus­ta Oulu Sepänkatu 20, 90100 Oulu</p>
-            </div>
-            <div class="flex gap-20 find_inner">
-              <i class="fa-solid fa-location-dot"></i>
-              <p class="common_pera">Startup Station Technopolis Ydinkeskus­ta Oulu Sepänkatu 20, 90100 Oulu</p>
-            </div>
-            <div class="flex gap-10 items-center  find_inner">
-              <a class="flex items-center justify-center" href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a class="flex items-center justify-center" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- copyright area start -->
-       <section class="copyright">
-        <div class="flex gap-20 justify-between items-center">
-          <img src="{{ site.baseurl }}/assets/images/1.png" alt="oam">
-          <img src="{{ site.baseurl }}/assets/images/2.png" alt="osao">
-          <img src="{{ site.baseurl }}/assets/images/3.png" alt="oulu">
-          <img src="{{ site.baseurl }}/assets/images/4.png" alt="oulu">
-          <img src="{{ site.baseurl }}/assets/images/5.png" alt="olues">
-          <img src="{{ site.baseurl }}/assets/images/6.png" alt="oia">
-          <img src="{{ site.baseurl }}/assets/images/7.png" alt="vtt">
-          <img src="{{ site.baseurl }}/assets/images/8.png" alt="pohjois">
-          <img src="{{ site.baseurl }}/assets/images/9.png" alt="the eu">
-          <img src="{{ site.baseurl }}/assets/images/10.png" alt="european union">
-        </div>
-       </section>
-      <!-- copyright area ends -->
- 
+      {% include footer.html %}
     {% include script.html %}
 </body>
 </html>
