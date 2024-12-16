@@ -5,12 +5,16 @@
 @import "_components/menu";
 @import "_pages/home";
 @import "_pages/event";
+@import "_pages/single_event";
+@import "_pages/service";
 
 
 // responsive css like media queries
 
 @import "_responsive/home";
 @import "_responsive/event";
+@import "_responsive/single_event";
+@import "_responsive/service";
 
 *,
 *::before,
