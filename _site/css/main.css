@@ -26,6 +26,10 @@
   align-items: center;
 }
 
+.items-start {
+  align-items: start;
+}
+
 .container-fluid {
   width: 100%;
   padding: 10px 30px;
@@ -54,16 +58,21 @@
 
 .link_text {
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 700;
   color: #070540;
   text-decoration: none;
   letter-spacing: 2.8px;
+  text-transform: uppercase;
 }
 
 .line {
   width: 91px;
   height: 2px;
   background: #070540;
+}
+
+.common_icon {
+  width: 25px;
 }
 
 .gap-10 {
@@ -895,6 +904,68 @@
   margin-top: 5px;
 }
 
+.single_service .r2a_container .content .top_title .link_text {
+  color: #fff;
+}
+.single_service .r2a_container .content .common_pera {
+  color: #fff;
+}
+.single_service .mobile_content .top_title .link_text {
+  color: #fff;
+}
+.single_service .mobile_content .common_pera {
+  color: #fff;
+}
+
+.founder_section {
+  padding: 70px 0;
+}
+.founder_section .r2a_container .filter_part svg {
+  width: 20px;
+}
+.founder_section .r2a_container .filter_part form select {
+  background: #fff;
+  color: #070540;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: 1px solid #070540;
+  border-radius: 5px;
+}
+.founder_section .r2a_container .items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 60px;
+}
+.founder_section .show_event_btn .underline {
+  width: 60px;
+}
+
+.founder_card {
+  background: #EDF2F5;
+  padding: 25px;
+}
+.founder_card .title_part h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #070540;
+  font-weight: 900;
+}
+.founder_card .title_part a svg {
+  width: 28px;
+  fill: #070540;
+}
+.founder_card .common_pera {
+  margin-bottom: 62px;
+}
+.founder_card a {
+  text-decoration: underline;
+}
+.founder_card a svg {
+  width: 20px;
+}
+
 @media (max-width: 767.98px) {
   .r2a_container {
     padding: 0 50px;
@@ -1334,7 +1405,7 @@
     display: none;
   }
   .pagination_section .flex .item .d_none {
-    display: block;
+    display: flex;
   }
   .pagination_section .flex .all_item {
     display: none;
@@ -1386,6 +1457,9 @@
   .service_page_service_section .r2a_container .services .services_items {
     padding-top: 20px;
   }
+  .contact_section {
+    padding: 50px 0;
+  }
   .contact_section .r2a_container {
     flex-direction: column;
     gap: 20px;
@@ -1398,7 +1472,7 @@
     width: 100%;
   }
   .contact_section .r2a_container .form .form_btn {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -1412,6 +1486,28 @@
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .contact_section .r2a_container .content {
     padding-right: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .single_service {
+    min-height: 820px;
+  }
+  .single_service .mobile_content {
+    padding: 40px;
+  }
+  .founder_section .r2a_container .items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .single_service {
+    min-height: 1000px;
+  }
+  .single_service .mobile_content {
+    padding: 40px;
+  }
+  .founder_section .r2a_container .items {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 *,
