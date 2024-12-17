@@ -12,15 +12,44 @@
             }
         }
     }
+    .contact_section{
+        .r2a_container{
+            flex-direction: column;
+            gap: 20px;
+            .content {
+                width: 100%;
+                padding-right: 0;
+            }
+            .form {
+                width: 100%;
+                .form_btn{
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
     
 }
 
 
 
 @media (min-width: 768px) and (max-width: 991.98px){
-
+    .contact_section{
+        .r2a_container{
+            gap: 30px;
+            .content {
+                padding-right: 0;
+            }
+        }
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px){
-
+    .contact_section{
+        .r2a_container{
+            .content {
+                padding-right: 0;
+            }
+        }
+    }
 }
