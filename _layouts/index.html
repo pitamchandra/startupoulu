@@ -73,7 +73,12 @@
       <section class="event_section">
         <div class="r2a_container">
           <div class="event_wrapper">
-            <div class="card event_card">
+            {% for post in site.posts limit:4 %}
+            {% if post.layout == "single-event" %}
+            {% include event_card.html %}
+            {% endif %}
+            {% endfor %}
+            <!-- <div class="card event_card">
               <div class="card_img">
                <img src="{{ site.baseurl }}/assets/images/herobg.jpg" alt="">
                <div class="overlayText flex items-center justify-center">MORE ABOUT THIS EVENT</div>
@@ -95,8 +100,8 @@
                   </div>
                   <p class="common_pera">Kaleva Media celebrates the 125th anniversary of the newspaper Kaleva by organizing a hackathon event for university and college students. Gather a team of 3-6 people, sign up and get ready to create something new. Winning team gets a grand prize of 5000€! Travel, accommodation and food are paid for. Enrollment through your own university.</p>
               </div>
-            </div>
-            <div class="card event_card">
+            </div> -->
+            <!-- <div class="card event_card">
               <div class="card_img">
                <img src="{{ site.baseurl }}/assets/images/herobg.jpg" alt="">
                <div class="overlayText flex items-center justify-center">MORE ABOUT THIS EVENT</div>
@@ -118,8 +123,8 @@
                   </div>
                   <p class="common_pera">Slush is the world’s leading startup event that takes place in Helsinki every year, bringing together top startups and world-class investors. This year’s…</p>
               </div>
-            </div>
-            <div class="card event_card">
+            </div> -->
+            <!-- <div class="card event_card">
               <div class="card_img">
                <img src="{{ site.baseurl }}/assets/images/herobg.jpg" alt="">
                <div class="overlayText flex items-center justify-center">MORE ABOUT THIS EVENT</div>
@@ -141,7 +146,7 @@
                   </div>
                   <p class="common_pera">Kickstart business idea competition brings together the students of Oamk, University of Oulu and OSAO. Come and watch the competition finale where the teams compete for cash prizes of 1500€, 1000€ and 500€ by pitching their business idea!</p>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="flex justify-center items-center">
