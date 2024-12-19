@@ -75,6 +75,10 @@
   width: 25px;
 }
 
+.mb_100 {
+  margin-bottom: 100px;
+}
+
 .gap-10 {
   gap: 10px;
 }
@@ -964,6 +968,26 @@
 }
 .founder_card a svg {
   width: 20px;
+}
+
+.blog_item {
+  background: #D4FBCD;
+  width: 100%;
+}
+.blog_item .blog_image {
+  width: 100%;
+}
+.blog_item .blog_image img {
+  width: 100%;
+}
+.blog_item .content {
+  padding: 35px 46px;
+}
+.blog_item .content h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #070540;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 767.98px) {
